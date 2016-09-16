@@ -20,8 +20,9 @@ git remote add Machine-Learning-House https://github.com/ShenXinfeng/Machine-Lea
 git remote remove Based-Command-House
 git remote add Based-Command-House https://github.com/ShenXinfeng/Based-Command.git
 
-4.//git添加文件到stage暂存
-git add readme.txt  
+4.//git添加文件到stage暂存->提交到仓库中
+git add readme.txt
+git status -s  
 git commit -m "readme first"
 git push -u Machine-Learning-House master
 
