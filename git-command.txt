@@ -1,0 +1,31 @@
+//从git上将项目完整下载下来
+//git  clone https://github.com/ShenXinfeng/SmartCar.git
+
+1.//创建唯一的标识
+git config --global user.email "sxf_0319@163.com"
+git config --global user.name "ShenXinfeng"
+
+//创建版本库
+mkdir GoGit
+cd GoGit
+pwd
+
+2.//把当前创建的作为仓库
+pwd
+git init
+
+3.//git连接并上传
+git remote remove Machine-Learning-House
+git remote add Machine-Learning-House https://github.com/ShenXinfeng/Machine-Learning.git
+git remote remove Based-Command-House
+git remote add Based-Command-House https://github.com/ShenXinfeng/Based-Command.git
+
+4.//git添加文件到stage暂存
+git add readme.txt  
+git commit -m "readme first"
+git push -u Machine-Learning-House master
+
+//git 删除某个文件
+git rm readme.txt
+
+
